@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+    <title>Coverage for speedsurprises/numbers/fibonacci.py: 100%</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="jquery.isonscreen.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.pyfile_ready);
+    </script>
+</head>
+<body class="pyfile">
+<div id="header">
+    <div class="content">
+        <h1>Coverage for <b>speedsurprises/numbers/fibonacci.py</b> :
+            <span class="pc_cov">100%</span>
+        </h1>
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+        <h2 class="stats">
+            14 statements &nbsp;
+            <span class="run shortkey_r button_toggle_run">14 run</span>
+            <span class="mis show_mis shortkey_m button_toggle_mis">0 missing</span>
+            <span class="exc show_exc shortkey_x button_toggle_exc">0 excluded</span>
+                <span class="par run show_par shortkey_p button_toggle_par">0 partial</span>
+        </h2>
+    </div>
+</div>
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">r</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        <span class="key">p</span> &nbsp; toggle line displays
+    </p>
+    <p class="keyhelp">
+        <span class="key">j</span>
+        <span class="key">k</span> &nbsp; next/prev highlighted chunk
+    </p>
+    <p class="keyhelp">
+        <span class="key">0</span> &nbsp; (zero) top of page
+    </p>
+    <p class="keyhelp">
+        <span class="key">1</span> &nbsp; (one) first highlighted chunk
+    </p>
+    </div>
+</div>
+<div id="source">
+    <p id="t1" class="pln"><span class="n"><a href="#t1">1</a></span><span class="t"><span class="str">""" Compute the fibonacci function."""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t2" class="pln"><span class="n"><a href="#t2">2</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t3" class="pln"><span class="n"><a href="#t3">3</a></span><span class="t"><span class="com"># Inspiration and source for the function:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t4" class="pln"><span class="n"><a href="#t4">4</a></span><span class="t"><span class="com"># Previous works.</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t5" class="pln"><span class="n"><a href="#t5">5</a></span><span class="t"><span class="com"># https://www.programiz.com/python-programming/examples/fibonacci-recursion  (for recursive)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t6" class="pln"><span class="n"><a href="#t6">6</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t7" class="pln"><span class="n"><a href="#t7">7</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t8" class="run"><span class="n"><a href="#t8">8</a></span><span class="t"><span class="key">def</span> <span class="nam">compute_recursive_fibonacci</span><span class="op">(</span><span class="nam">value</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"><label for="ctxs8" class="ctx">(empty)</label></span></p>
+    <p id="t9" class="pln"><span class="n"><a href="#t9">9</a></span><span class="t">    <span class="str">""" Assumes the value is a natural number. Returns the value!"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t10" class="run"><span class="n"><a href="#t10">10</a></span><span class="t">    <span class="key">if</span><span class="op">(</span><span class="nam">value</span> <span class="op">&lt;=</span> <span class="num">1</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><input type="checkbox" id="ctxs10" /><span class="r"><label for="ctxs10" class="ctx">8 ctx</label></span><span class="ctxs"><span>tests/test_fibonacci.py::test_fibonacci_hypothesis|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[1-1]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[2-1]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[3-2]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[4-3]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[5-5]|call</span><span>tests/test_fibonacci.py::test_fibonacci_single|call</span><span>tests/test_fibonacci.py::test_recursive_fibonacci_benchmark|call</span></span></p>
+    <p id="t11" class="run"><span class="n"><a href="#t11">11</a></span><span class="t">        <span class="key">return</span> <span class="nam">value</span>&nbsp;</span><input type="checkbox" id="ctxs11" /><span class="r"><label for="ctxs11" class="ctx">8 ctx</label></span><span class="ctxs"><span>tests/test_fibonacci.py::test_fibonacci_hypothesis|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[1-1]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[2-1]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[3-2]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[4-3]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[5-5]|call</span><span>tests/test_fibonacci.py::test_fibonacci_single|call</span><span>tests/test_fibonacci.py::test_recursive_fibonacci_benchmark|call</span></span></p>
+    <p id="t12" class="pln"><span class="n"><a href="#t12">12</a></span><span class="t">    <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t13" class="run"><span class="n"><a href="#t13">13</a></span><span class="t">        <span class="key">return</span> <span class="nam">compute_recursive_fibonacci</span><span class="op">(</span><span class="nam">value</span> <span class="op">-</span> <span class="num">2</span><span class="op">)</span> <span class="op">+</span> <span class="nam">compute_recursive_fibonacci</span><span class="op">(</span><span class="nam">value</span> <span class="op">-</span> <span class="num">1</span><span class="op">)</span>&nbsp;</span><input type="checkbox" id="ctxs13" /><span class="r"><label for="ctxs13" class="ctx">7 ctx</label></span><span class="ctxs"><span>tests/test_fibonacci.py::test_fibonacci_hypothesis|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[2-1]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[3-2]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[4-3]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[5-5]|call</span><span>tests/test_fibonacci.py::test_fibonacci_single|call</span><span>tests/test_fibonacci.py::test_recursive_fibonacci_benchmark|call</span></span></p>
+    <p id="t14" class="pln"><span class="n"><a href="#t14">14</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t15" class="pln"><span class="n"><a href="#t15">15</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t16" class="run"><span class="n"><a href="#t16">16</a></span><span class="t"><span class="key">def</span> <span class="nam">compute_iterative_fibonacci</span><span class="op">(</span><span class="nam">value</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"><label for="ctxs16" class="ctx">(empty)</label></span></p>
+    <p id="t17" class="run"><span class="n"><a href="#t17">17</a></span><span class="t">    <span class="key">if</span> <span class="op">(</span><span class="nam">value</span> <span class="op">&lt;=</span> <span class="num">1</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><input type="checkbox" id="ctxs17" /><span class="r"><label for="ctxs17" class="ctx">8 ctx</label></span><span class="ctxs"><span>tests/test_fibonacci.py::test_fibonacci_hypothesis|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[1-1]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[2-1]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[3-2]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[4-3]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[5-5]|call</span><span>tests/test_fibonacci.py::test_fibonacci_single|call</span><span>tests/test_fibonacci.py::test_iterative_fibonacci_benchmark|call</span></span></p>
+    <p id="t18" class="run"><span class="n"><a href="#t18">18</a></span><span class="t">        <span class="key">return</span> <span class="nam">value</span>&nbsp;</span><input type="checkbox" id="ctxs18" /><span class="r"><label for="ctxs18" class="ctx">2 ctx</label></span><span class="ctxs"><span>tests/test_fibonacci.py::test_fibonacci_hypothesis|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[1-1]|call</span></span></p>
+    <p id="t19" class="pln"><span class="n"><a href="#t19">19</a></span><span class="t">    <span class="key">else</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t20" class="run"><span class="n"><a href="#t20">20</a></span><span class="t">        <span class="nam">x</span> <span class="op">=</span> <span class="num">0</span>&nbsp;</span><input type="checkbox" id="ctxs20" /><span class="r"><label for="ctxs20" class="ctx">7 ctx</label></span><span class="ctxs"><span>tests/test_fibonacci.py::test_fibonacci_hypothesis|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[2-1]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[3-2]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[4-3]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[5-5]|call</span><span>tests/test_fibonacci.py::test_fibonacci_single|call</span><span>tests/test_fibonacci.py::test_iterative_fibonacci_benchmark|call</span></span></p>
+    <p id="t21" class="run"><span class="n"><a href="#t21">21</a></span><span class="t">        <span class="nam">y</span> <span class="op">=</span> <span class="num">1</span>&nbsp;</span><input type="checkbox" id="ctxs21" /><span class="r"><label for="ctxs21" class="ctx">7 ctx</label></span><span class="ctxs"><span>tests/test_fibonacci.py::test_fibonacci_hypothesis|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[2-1]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[3-2]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[4-3]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[5-5]|call</span><span>tests/test_fibonacci.py::test_fibonacci_single|call</span><span>tests/test_fibonacci.py::test_iterative_fibonacci_benchmark|call</span></span></p>
+    <p id="t22" class="run"><span class="n"><a href="#t22">22</a></span><span class="t">        <span class="key">for</span> <span class="nam">i</span> <span class="key">in</span> <span class="nam">range</span><span class="op">(</span><span class="num">1</span><span class="op">,</span> <span class="nam">value</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><input type="checkbox" id="ctxs22" /><span class="r"><label for="ctxs22" class="ctx">7 ctx</label></span><span class="ctxs"><span>tests/test_fibonacci.py::test_fibonacci_hypothesis|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[2-1]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[3-2]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[4-3]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[5-5]|call</span><span>tests/test_fibonacci.py::test_fibonacci_single|call</span><span>tests/test_fibonacci.py::test_iterative_fibonacci_benchmark|call</span></span></p>
+    <p id="t23" class="run"><span class="n"><a href="#t23">23</a></span><span class="t">            <span class="nam">z</span> <span class="op">=</span> <span class="op">(</span><span class="nam">x</span> <span class="op">+</span> <span class="nam">y</span><span class="op">)</span>&nbsp;</span><input type="checkbox" id="ctxs23" /><span class="r"><label for="ctxs23" class="ctx">7 ctx</label></span><span class="ctxs"><span>tests/test_fibonacci.py::test_fibonacci_hypothesis|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[2-1]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[3-2]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[4-3]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[5-5]|call</span><span>tests/test_fibonacci.py::test_fibonacci_single|call</span><span>tests/test_fibonacci.py::test_iterative_fibonacci_benchmark|call</span></span></p>
+    <p id="t24" class="run"><span class="n"><a href="#t24">24</a></span><span class="t">            <span class="nam">x</span> <span class="op">=</span> <span class="nam">y</span>&nbsp;</span><input type="checkbox" id="ctxs24" /><span class="r"><label for="ctxs24" class="ctx">7 ctx</label></span><span class="ctxs"><span>tests/test_fibonacci.py::test_fibonacci_hypothesis|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[2-1]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[3-2]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[4-3]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[5-5]|call</span><span>tests/test_fibonacci.py::test_fibonacci_single|call</span><span>tests/test_fibonacci.py::test_iterative_fibonacci_benchmark|call</span></span></p>
+    <p id="t25" class="run"><span class="n"><a href="#t25">25</a></span><span class="t">            <span class="nam">y</span> <span class="op">=</span> <span class="nam">z</span>&nbsp;</span><input type="checkbox" id="ctxs25" /><span class="r"><label for="ctxs25" class="ctx">7 ctx</label></span><span class="ctxs"><span>tests/test_fibonacci.py::test_fibonacci_hypothesis|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[2-1]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[3-2]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[4-3]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[5-5]|call</span><span>tests/test_fibonacci.py::test_fibonacci_single|call</span><span>tests/test_fibonacci.py::test_iterative_fibonacci_benchmark|call</span></span></p>
+    <p id="t26" class="run"><span class="n"><a href="#t26">26</a></span><span class="t">        <span class="key">return</span> <span class="nam">y</span>&nbsp;</span><input type="checkbox" id="ctxs26" /><span class="r"><label for="ctxs26" class="ctx">7 ctx</label></span><span class="ctxs"><span>tests/test_fibonacci.py::test_fibonacci_hypothesis|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[2-1]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[3-2]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[4-3]|call</span><span>tests/test_fibonacci.py::test_fibonacci_multiple[5-5]|call</span><span>tests/test_fibonacci.py::test_fibonacci_single|call</span><span>tests/test_fibonacci.py::test_iterative_fibonacci_benchmark|call</span></span></p>
+</div>
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io/en/coverage-5.0b2">coverage.py v5.0b2</a>,
+            created at 2019-11-18 17:46
+        </p>
+    </div>
+</div>
+</body>
+</html>

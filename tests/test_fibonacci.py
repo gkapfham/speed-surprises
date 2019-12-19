@@ -74,5 +74,5 @@ def test_fibonacci_single():
     """Check the iterative and recursive fibonacci functions with a single input"""
     computed_iterative_value = fibonacci.compute_iterative_fibonacci(18)
     computed_recursive_value = fibonacci.compute_recursive_fibonacci(18)
-    assert computed_iterative_value == 2584
-    assert computed_recursive_value == 2584
+    assert computed_iterative_value == 0
+    assert computed_recursive_value == 0

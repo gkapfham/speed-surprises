@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=emulateIE7" />
+    <title>Coverage for tests/test_copies_ofc.py: 100%</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.hotkeys.js"></script>
+    <script type="text/javascript" src="jquery.isonscreen.js"></script>
+    <script type="text/javascript" src="coverage_html.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(coverage.pyfile_ready);
+    </script>
+</head>
+<body class="pyfile">
+<div id="header">
+    <div class="content">
+        <h1>Coverage for <b>tests/test_copies_ofc.py</b> :
+            <span class="pc_cov">100%</span>
+        </h1>
+        <img id="keyboard_icon" src="keybd_closed.png" alt="Show keyboard shortcuts" />
+        <h2 class="stats">
+            26 statements &nbsp;
+            <span class="run shortkey_r button_toggle_run">26 run</span>
+            <span class="mis show_mis shortkey_m button_toggle_mis">0 missing</span>
+            <span class="exc show_exc shortkey_x button_toggle_exc">0 excluded</span>
+                <span class="par run show_par shortkey_p button_toggle_par">0 partial</span>
+        </h2>
+    </div>
+</div>
+<div class="help_panel">
+    <img id="panel_icon" src="keybd_open.png" alt="Hide keyboard shortcuts" />
+    <p class="legend">Hot-keys on this page</p>
+    <div>
+    <p class="keyhelp">
+        <span class="key">r</span>
+        <span class="key">m</span>
+        <span class="key">x</span>
+        <span class="key">p</span> &nbsp; toggle line displays
+    </p>
+    <p class="keyhelp">
+        <span class="key">j</span>
+        <span class="key">k</span> &nbsp; next/prev highlighted chunk
+    </p>
+    <p class="keyhelp">
+        <span class="key">0</span> &nbsp; (zero) top of page
+    </p>
+    <p class="keyhelp">
+        <span class="key">1</span> &nbsp; (one) first highlighted chunk
+    </p>
+    </div>
+</div>
+<div id="source">
+    <p id="t1" class="pln"><span class="n"><a href="#t1">1</a></span><span class="t"><span class="str">"""Tests for the mcopies_ofc function in the copies module of the text package"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t2" class="pln"><span class="n"><a href="#t2">2</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t3" class="run"><span class="n"><a href="#t3">3</a></span><span class="t"><span class="key">import</span> <span class="nam">pytest</span>&nbsp;</span><span class="r"><label for="ctxs3" class="ctx">(empty)</label></span></p>
+    <p id="t4" class="pln"><span class="n"><a href="#t4">4</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t5" class="run"><span class="n"><a href="#t5">5</a></span><span class="t"><span class="key">from</span> <span class="nam">hypothesis</span> <span class="key">import</span> <span class="nam">given</span>&nbsp;</span><span class="r"><label for="ctxs5" class="ctx">(empty)</label></span></p>
+    <p id="t6" class="run"><span class="n"><a href="#t6">6</a></span><span class="t"><span class="key">from</span> <span class="nam">hypothesis</span> <span class="key">import</span> <span class="nam">settings</span>&nbsp;</span><span class="r"><label for="ctxs6" class="ctx">(empty)</label></span></p>
+    <p id="t7" class="run"><span class="n"><a href="#t7">7</a></span><span class="t"><span class="key">from</span> <span class="nam">hypothesis</span> <span class="key">import</span> <span class="nam">Verbosity</span>&nbsp;</span><span class="r"><label for="ctxs7" class="ctx">(empty)</label></span></p>
+    <p id="t8" class="run"><span class="n"><a href="#t8">8</a></span><span class="t"><span class="key">from</span> <span class="nam">hypothesis</span><span class="op">.</span><span class="nam">strategies</span> <span class="key">import</span> <span class="nam">integers</span>&nbsp;</span><span class="r"><label for="ctxs8" class="ctx">(empty)</label></span></p>
+    <p id="t9" class="pln"><span class="n"><a href="#t9">9</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t10" class="run"><span class="n"><a href="#t10">10</a></span><span class="t"><span class="key">from</span> <span class="nam">speedsurprises</span><span class="op">.</span><span class="nam">text</span> <span class="key">import</span> <span class="nam">copies</span>&nbsp;</span><span class="r"><label for="ctxs10" class="ctx">(empty)</label></span></p>
+    <p id="t11" class="pln"><span class="n"><a href="#t11">11</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t12" class="pln"><span class="n"><a href="#t12">12</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t13" class="run"><span class="n"><a href="#t13">13</a></span><span class="t"><span class="op">@</span><span class="nam">pytest</span><span class="op">.</span><span class="nam">mark</span><span class="op">.</span><span class="nam">benchmark</span>&nbsp;</span><span class="r"><label for="ctxs13" class="ctx">(empty)</label></span></p>
+    <p id="t14" class="pln"><span class="n"><a href="#t14">14</a></span><span class="t"><span class="key">def</span> <span class="nam">test_count_benchmark</span><span class="op">(</span><span class="nam">benchmark</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t15" class="pln"><span class="n"><a href="#t15">15</a></span><span class="t">    <span class="str">"""Benchmark the mcopies_ofc function"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t16" class="run"><span class="n"><a href="#t16">16</a></span><span class="t">    <span class="nam">copied_character_string</span> <span class="op">=</span> <span class="nam">benchmark</span><span class="op">(</span><span class="nam">copies</span><span class="op">.</span><span class="nam">mcopies_ofc</span><span class="op">,</span> <span class="nam">input_string</span><span class="op">=</span><span class="str">"100"</span><span class="op">)</span>&nbsp;</span><input type="checkbox" id="ctxs16" /><span class="r"><label for="ctxs16" class="ctx">1 ctx</label></span><span class="ctxs"><span>tests/test_copies_ofc.py::test_count_benchmark|call</span></span></p>
+    <p id="t17" class="run"><span class="n"><a href="#t17">17</a></span><span class="t">    <span class="key">assert</span> <span class="nam">len</span><span class="op">(</span><span class="nam">copied_character_string</span><span class="op">)</span> <span class="op">==</span> <span class="num">100</span>&nbsp;</span><input type="checkbox" id="ctxs17" /><span class="r"><label for="ctxs17" class="ctx">1 ctx</label></span><span class="ctxs"><span>tests/test_copies_ofc.py::test_count_benchmark|call</span></span></p>
+    <p id="t18" class="run"><span class="n"><a href="#t18">18</a></span><span class="t">    <span class="key">assert</span> <span class="nam">copied_character_string</span><span class="op">.</span><span class="nam">count</span><span class="op">(</span><span class="str">"C"</span><span class="op">)</span> <span class="op">==</span> <span class="num">100</span>&nbsp;</span><input type="checkbox" id="ctxs18" /><span class="r"><label for="ctxs18" class="ctx">1 ctx</label></span><span class="ctxs"><span>tests/test_copies_ofc.py::test_count_benchmark|call</span></span></p>
+    <p id="t19" class="pln"><span class="n"><a href="#t19">19</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t20" class="pln"><span class="n"><a href="#t20">20</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t21" class="run"><span class="n"><a href="#t21">21</a></span><span class="t"><span class="op">@</span><span class="nam">given</span><span class="op">(</span><span class="nam">copies_as_int</span><span class="op">=</span><span class="nam">integers</span><span class="op">(</span><span class="nam">min_value</span><span class="op">=</span><span class="num">1</span><span class="op">,</span> <span class="nam">max_value</span><span class="op">=</span><span class="num">10</span><span class="op">)</span><span class="op">)</span>&nbsp;</span><span class="r"><label for="ctxs21" class="ctx">(empty)</label></span></p>
+    <p id="t22" class="run"><span class="n"><a href="#t22">22</a></span><span class="t"><span class="op">@</span><span class="nam">settings</span><span class="op">(</span><span class="nam">verbosity</span><span class="op">=</span><span class="nam">Verbosity</span><span class="op">.</span><span class="nam">verbose</span><span class="op">,</span> <span class="nam">deadline</span><span class="op">=</span><span class="key">None</span><span class="op">)</span>&nbsp;</span><input type="checkbox" id="ctxs22" /><span class="r"><label for="ctxs22" class="ctx">2 ctx</label></span><span class="ctxs"><span>(empty)</span><span>tests/test_copies_ofc.py::test_letter_count_hypothesis|call</span></span></p>
+    <p id="t23" class="run"><span class="n"><a href="#t23">23</a></span><span class="t"><span class="op">@</span><span class="nam">pytest</span><span class="op">.</span><span class="nam">mark</span><span class="op">.</span><span class="nam">hypothesisworks</span>&nbsp;</span><span class="r"><label for="ctxs23" class="ctx">(empty)</label></span></p>
+    <p id="t24" class="pln"><span class="n"><a href="#t24">24</a></span><span class="t"><span class="key">def</span> <span class="nam">test_letter_count_hypothesis</span><span class="op">(</span><span class="nam">copies_as_int</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t25" class="pln"><span class="n"><a href="#t25">25</a></span><span class="t">    <span class="str">"""Returns output with correct number of copies"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t26" class="run"><span class="n"><a href="#t26">26</a></span><span class="t">    <span class="nam">copy_count</span> <span class="op">=</span> <span class="nam">copies_as_int</span>&nbsp;</span><input type="checkbox" id="ctxs26" /><span class="r"><label for="ctxs26" class="ctx">1 ctx</label></span><span class="ctxs"><span>tests/test_copies_ofc.py::test_letter_count_hypothesis|call</span></span></p>
+    <p id="t27" class="run"><span class="n"><a href="#t27">27</a></span><span class="t">    <span class="nam">copies_as_string</span> <span class="op">=</span> <span class="nam">str</span><span class="op">(</span><span class="nam">copies_as_int</span><span class="op">)</span>&nbsp;</span><input type="checkbox" id="ctxs27" /><span class="r"><label for="ctxs27" class="ctx">1 ctx</label></span><span class="ctxs"><span>tests/test_copies_ofc.py::test_letter_count_hypothesis|call</span></span></p>
+    <p id="t28" class="run"><span class="n"><a href="#t28">28</a></span><span class="t">    <span class="nam">copied_character_string</span> <span class="op">=</span> <span class="nam">copies</span><span class="op">.</span><span class="nam">mcopies_ofc</span><span class="op">(</span><span class="nam">copies_as_string</span><span class="op">)</span>&nbsp;</span><input type="checkbox" id="ctxs28" /><span class="r"><label for="ctxs28" class="ctx">1 ctx</label></span><span class="ctxs"><span>tests/test_copies_ofc.py::test_letter_count_hypothesis|call</span></span></p>
+    <p id="t29" class="run"><span class="n"><a href="#t29">29</a></span><span class="t">    <span class="key">assert</span> <span class="nam">len</span><span class="op">(</span><span class="nam">copied_character_string</span><span class="op">)</span> <span class="op">==</span> <span class="nam">copy_count</span>&nbsp;</span><input type="checkbox" id="ctxs29" /><span class="r"><label for="ctxs29" class="ctx">1 ctx</label></span><span class="ctxs"><span>tests/test_copies_ofc.py::test_letter_count_hypothesis|call</span></span></p>
+    <p id="t30" class="run"><span class="n"><a href="#t30">30</a></span><span class="t">    <span class="key">assert</span> <span class="nam">copied_character_string</span><span class="op">.</span><span class="nam">count</span><span class="op">(</span><span class="str">"C"</span><span class="op">)</span> <span class="op">==</span> <span class="nam">copy_count</span>&nbsp;</span><input type="checkbox" id="ctxs30" /><span class="r"><label for="ctxs30" class="ctx">1 ctx</label></span><span class="ctxs"><span>tests/test_copies_ofc.py::test_letter_count_hypothesis|call</span></span></p>
+    <p id="t31" class="pln"><span class="n"><a href="#t31">31</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t32" class="pln"><span class="n"><a href="#t32">32</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t33" class="run"><span class="n"><a href="#t33">33</a></span><span class="t"><span class="op">@</span><span class="nam">pytest</span><span class="op">.</span><span class="nam">mark</span><span class="op">.</span><span class="nam">parametrize</span><span class="op">(</span>&nbsp;</span><span class="r"><label for="ctxs33" class="ctx">(empty)</label></span></p>
+    <p id="t34" class="pln"><span class="n"><a href="#t34">34</a></span><span class="t">    <span class="str">"letter_count,expected_count"</span><span class="op">,</span> <span class="op">[</span><span class="op">(</span><span class="str">"1"</span><span class="op">,</span> <span class="num">1</span><span class="op">)</span><span class="op">,</span> <span class="op">(</span><span class="str">"10"</span><span class="op">,</span> <span class="num">10</span><span class="op">)</span><span class="op">,</span> <span class="op">(</span><span class="str">"100"</span><span class="op">,</span> <span class="num">100</span><span class="op">)</span><span class="op">,</span> <span class="op">(</span><span class="str">"1000"</span><span class="op">,</span> <span class="num">1000</span><span class="op">)</span><span class="op">]</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t35" class="pln"><span class="n"><a href="#t35">35</a></span><span class="t"><span class="op">)</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t36" class="pln"><span class="n"><a href="#t36">36</a></span><span class="t"><span class="key">def</span> <span class="nam">test_letter_count_multiple</span><span class="op">(</span><span class="nam">letter_count</span><span class="op">,</span> <span class="nam">expected_count</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t37" class="pln"><span class="n"><a href="#t37">37</a></span><span class="t">    <span class="str">"""Returns output with correct number of copies"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t38" class="run"><span class="n"><a href="#t38">38</a></span><span class="t">    <span class="nam">copied_character_string</span> <span class="op">=</span> <span class="nam">copies</span><span class="op">.</span><span class="nam">mcopies_ofc</span><span class="op">(</span><span class="nam">letter_count</span><span class="op">)</span>&nbsp;</span><input type="checkbox" id="ctxs38" /><span class="r"><label for="ctxs38" class="ctx">4 ctx</label></span><span class="ctxs"><span>tests/test_copies_ofc.py::test_letter_count_multiple[1-1]|call</span><span>tests/test_copies_ofc.py::test_letter_count_multiple[10-10]|call</span><span>tests/test_copies_ofc.py::test_letter_count_multiple[100-100]|call</span><span>tests/test_copies_ofc.py::test_letter_count_multiple[1000-1000]|call</span></span></p>
+    <p id="t39" class="run"><span class="n"><a href="#t39">39</a></span><span class="t">    <span class="key">assert</span> <span class="nam">len</span><span class="op">(</span><span class="nam">copied_character_string</span><span class="op">)</span> <span class="op">==</span> <span class="nam">expected_count</span>&nbsp;</span><input type="checkbox" id="ctxs39" /><span class="r"><label for="ctxs39" class="ctx">4 ctx</label></span><span class="ctxs"><span>tests/test_copies_ofc.py::test_letter_count_multiple[1-1]|call</span><span>tests/test_copies_ofc.py::test_letter_count_multiple[10-10]|call</span><span>tests/test_copies_ofc.py::test_letter_count_multiple[100-100]|call</span><span>tests/test_copies_ofc.py::test_letter_count_multiple[1000-1000]|call</span></span></p>
+    <p id="t40" class="run"><span class="n"><a href="#t40">40</a></span><span class="t">    <span class="key">assert</span> <span class="nam">copied_character_string</span><span class="op">.</span><span class="nam">count</span><span class="op">(</span><span class="str">"C"</span><span class="op">)</span> <span class="op">==</span> <span class="nam">expected_count</span>&nbsp;</span><input type="checkbox" id="ctxs40" /><span class="r"><label for="ctxs40" class="ctx">4 ctx</label></span><span class="ctxs"><span>tests/test_copies_ofc.py::test_letter_count_multiple[1-1]|call</span><span>tests/test_copies_ofc.py::test_letter_count_multiple[10-10]|call</span><span>tests/test_copies_ofc.py::test_letter_count_multiple[100-100]|call</span><span>tests/test_copies_ofc.py::test_letter_count_multiple[1000-1000]|call</span></span></p>
+    <p id="t41" class="pln"><span class="n"><a href="#t41">41</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t42" class="pln"><span class="n"><a href="#t42">42</a></span><span class="t">&nbsp;</span><span class="r"></span></p>
+    <p id="t43" class="run"><span class="n"><a href="#t43">43</a></span><span class="t"><span class="key">def</span> <span class="nam">test_letter_count_single</span><span class="op">(</span><span class="op">)</span><span class="op">:</span>&nbsp;</span><span class="r"><label for="ctxs43" class="ctx">(empty)</label></span></p>
+    <p id="t44" class="pln"><span class="n"><a href="#t44">44</a></span><span class="t">    <span class="str">"""Returns output with correct number of copies"""</span>&nbsp;</span><span class="r"></span></p>
+    <p id="t45" class="run"><span class="n"><a href="#t45">45</a></span><span class="t">    <span class="nam">copied_character_string</span> <span class="op">=</span> <span class="nam">copies</span><span class="op">.</span><span class="nam">mcopies_ofc</span><span class="op">(</span><span class="str">"10"</span><span class="op">)</span>&nbsp;</span><input type="checkbox" id="ctxs45" /><span class="r"><label for="ctxs45" class="ctx">1 ctx</label></span><span class="ctxs"><span>tests/test_copies_ofc.py::test_letter_count_single|call</span></span></p>
+    <p id="t46" class="run"><span class="n"><a href="#t46">46</a></span><span class="t">    <span class="key">assert</span> <span class="nam">len</span><span class="op">(</span><span class="nam">copied_character_string</span><span class="op">)</span> <span class="op">==</span> <span class="num">10</span>&nbsp;</span><input type="checkbox" id="ctxs46" /><span class="r"><label for="ctxs46" class="ctx">1 ctx</label></span><span class="ctxs"><span>tests/test_copies_ofc.py::test_letter_count_single|call</span></span></p>
+    <p id="t47" class="run"><span class="n"><a href="#t47">47</a></span><span class="t">    <span class="key">assert</span> <span class="nam">copied_character_string</span><span class="op">.</span><span class="nam">count</span><span class="op">(</span><span class="str">"C"</span><span class="op">)</span> <span class="op">==</span> <span class="num">10</span>&nbsp;</span><input type="checkbox" id="ctxs47" /><span class="r"><label for="ctxs47" class="ctx">1 ctx</label></span><span class="ctxs"><span>tests/test_copies_ofc.py::test_letter_count_single|call</span></span></p>
+</div>
+<div id="footer">
+    <div class="content">
+        <p>
+            <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io/en/coverage-5.0b2">coverage.py v5.0b2</a>,
+            created at 2019-11-18 17:46
+        </p>
+    </div>
+</div>
+</body>
+</html>
